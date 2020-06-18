@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <typeAliases>
+        <typeAlias type="com.z.pojo.Admin" alias="Admin"/>
+        <typeAlias type="com.z.pojo.Consumer" alias="Consumer"/>
+        <typeAlias type="com.z.pojo.Goods" alias="Goods"/>
+        <typeAlias type="com.z.pojo.GoodsType" alias="GoodsType"/>
+        <typeAlias type="com.z.pojo.Notice" alias="Notice"/>
+        <typeAlias type="com.z.pojo.Orders" alias="Orders"/>
+    </typeAliases>
+
+</configuration>

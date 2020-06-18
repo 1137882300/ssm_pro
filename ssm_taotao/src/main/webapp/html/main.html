@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <title>main.jsp</title>
+
+    <style type="text/css">
+        * {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            margin: auto;
+            height: auto;
+            width: 100%;
+            border: 2px solid #006633;
+        }
+
+        #header {
+            text-align: center;
+            height: 90px;
+            width: 100%;
+            margin: 0px 0px 3px 0px;
+        }
+
+        #header h1 {
+            text-align: center;
+            font-family: "Franklin Gothic Medium";
+            color: #000000;
+            font-size: 30px;
+        }
+
+        #navigator {
+            text-align: center;
+            height: 25px;
+            width: 100%;
+            font-size: 14px;
+        }
+        #navigator ul {
+            text-align: center;
+            list-style-type: none;
+            margin-left: 340px;
+        }
+        #navigator li {
+            float: left;
+            position: relative;
+        }
+        #navigator li a {
+            color: #000000;
+            text-decoration: none;
+            padding-top: 4px;
+            display: block;
+            width: 98px;
+            height: 22px;
+            text-align: center;
+            background-color: #269abc;
+            margin-left: 2px;
+        }
+        #navigator li a:hover {
+            background-color: #999999;
+            color: #FFFFFF;
+        }
+        /*#navigator ul li ul {*/
+        /*    visibility: hidden;*/
+        /*    position: absolute;*/
+        /*}*/
+
+        #navigator ul li:hover ul,
+        #navigator ul a:hover ul{
+            visibility: visible;
+        }
+
+        #content {
+            height: auto;
+            width: 100%;
+            padding: 0px;
+            margin-top: 40px;
+        }
+
+        #content iframe {
+            margin: auto;
+            text-align: center;
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="header">
+        <br>
+        <br>
+        <h1>欢迎</h1>
+    </div>
+
+    <div id="navigator">
+        <ul>
+            <li>
+                <a href="${pageContext.request.contextPath}/goodsController/selectGoods" target="iframe">商品管理</a>
+            </li>
+            <li><a>类型管理</a>
+<!--                <ul>-->
+<!--                    <li><a href="addType.html" target="iframe">添加类型</a></li>-->
+<!--                    <li><a href="deleteType.html" target="iframe">删除类型</a></li>-->
+<!--                </ul>-->
+            </li>
+            <li><a>用户管理</a>
+<!--                <ul>-->
+<!--                    <li><a href="userManager.html" target="iframe">删除用户</a></li>-->
+<!--                </ul>-->
+            </li>
+            <li><a>订单管理</a>
+<!--                <ul>-->
+<!--                    <li><a href="orderManager.html" target="iframe">删除订单</a></li>-->
+<!--                </ul>-->
+            </li>
+            <li><a>公告管理</a>
+<!--                <ul>-->
+<!--                    <li><a href="addNotice.html" target="iframe">添加公告</a></li>-->
+<!--                    <li><a href="deleteNoticeSelect.html" target="iframe">删除公告</a></li>-->
+<!--                </ul>-->
+            </li>
+            <li><a href="${pageContext.request.contextPath}/adminController/exit">安全退出</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div id="content">
+        <iframe src="${pageContext.request.contextPath}/goodsController/selectGoods"  name="iframe" frameborder="1"></iframe>
+    </div>
+
+
+
+
+
+</body>
+</html>

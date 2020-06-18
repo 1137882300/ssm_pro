@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../bootStrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../bootStrap/html5shiv/html5shiv.min.js"></script>
+    <script src="../bootStrap/respond/respond.min.js"></script>
+    <script src="../bootStrap/jquery/jquery.min.js"></script>
+    <script src="../bootStrap/js/bootstrap.min.js"></script>
+
+    <title>detailGoods</title>
+    <script type="text/javascript">
+        function goCart() {
+            document.putcartform.submit();
+        }
+        function gofocus() {
+            window.location.href = "" ;
+        }
+    </script>
+</head>
+<body background="../jquerynavlbt/images/error/img_404.jpg">
+<div class="container">
+
+<!-- 图片-->
+    <div id="goodsInfo" style="text-align: center">
+        <div class="imgInfo" style="margin-top: 20px">
+            <input type="hidden" name="id" value="1"/>
+            <div class="bt"><strong>水果1</strong></div>
+            <img src="images/logo.png"/>
+        </div>
+    </div>
+
+
+<!--商品详细-->
+    <!--商品表述-->
+    <div class="goods_desc" style="text-align: center; border: 2px solid #006633;width: 400px;margin-left: 380px">
+
+        <div class="goods_show" style="text-align: left;">
+            <span>价格&ensp;&ensp;&ensp;&ensp;</span><strong class="yj"><s>12元</s></strong><br>
+                <span>折扣价&ensp;&ensp;</span><strong class="xj" style="font-size: 20px">10元</strong><br>
+                <span>类型&ensp;&ensp;&ensp;&ensp;</span><strong>${getGname}</strong><br>
+                <span>购买数量</span><input type="text" name="shoppingnum" class="good_txt" value="1"/> (库存<strong>200</strong>)<br>
+
+        </div>
+        <p class="bottom10 top5" style="text-align: right">
+            <img src="../jquerynavlbt/images/follow.png" onclick="goFollow()"/>&nbsp;&nbsp;&nbsp;
+            <img src="../jquerynavlbt/images/shopCart.png" onclick="goCart()"/>
+        </p>
+    </div>
+
+</div>
+
+
+
+
+</body>
+</html>
